@@ -34,28 +34,49 @@ export const enNavbar = navbar([
             icon: "book",
             link: "/userguide/migration/",
           },
-        ], 
+        ],
       },
       {
         text: "Disaster Recovery",
         icon: "thumbs-up",
         children: [
-          { 
+          {
             text: "User Guide",
             icon: "book",
             link: "/userguide/poc/",
           },
-          { 
+          {
             text: "HyperBDR Manual(About to be abandoned)",
             icon: "book",
             link: "/userguide/dr-usage-guide/",
           },
-          { 
+          {
             text: "HyperBDR Manual",
             icon: "book",
             link: "/userguide/dr/",
           },
-        ], 
+        ],
+      },
+      {
+        text: "Operations",
+        icon: "",
+        children: [
+          {
+            text: "Administration Guide",
+            icon: "book",
+            link: "/userguide/operations/"
+          },
+          {
+            text: "Admin Portal Manual",
+            icon: "book",
+            link: "/userguide/admin-portal/"
+          },
+          {
+            text: "O&M Guide",
+            icon: "book",
+            link: "/userguide/om-guide/"
+          },
+        ],
       },
       {
         text: "Tools",
@@ -64,45 +85,6 @@ export const enNavbar = navbar([
           {
             text: "Calculator",
             link: "/userguide/tools/",
-          }
-        ], 
-      },
-
-      // NOTE(Ray): Move Product Overview to the top level menu
-      //{
-      //  text: "Product Overview",
-      //  icon: "eye",
-      //  prefix: "product-overview/",
-      //  link: "/product-overview/",
-      //  children: [],
-      //},
-
-      // NOTE(Ray): Merge Product Training with Product Overview
-      // Comment this top level menu item
-      //{
-      //  text: "Product Training",
-      //  icon: "dumbbell",
-      //  prefix: "product-training/",
-      //  link: "/product-training/",
-      //  children: [],
-      //},
-
-      // NOTE(Ray): Merge Pre Sales with Product Overview
-      //{
-      //  text: "Pre Sales",
-      //  icon: "handshake",
-      //  prefix: "userguide/presales/",
-      //  link: "/userguide/presales/",
-      //  children: [],
-      //},
-      {
-        text: "Operations",
-        icon: "",
-        children: [
-          {
-            text: "Operation Platform Mannual",
-            icon: "book",
-            link: "/userguide/operations/"
           }
         ],
       },
