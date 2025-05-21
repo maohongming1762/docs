@@ -12,7 +12,7 @@ export const zhSidebar = sidebar({
   "/zh/userguide/checklist": [
     {
       text: "检查清单",
-      icon: "book",
+      icon: "check",
       prefix: "",
       children: [
         "dr-checklist.md",
@@ -29,6 +29,7 @@ export const zhSidebar = sidebar({
       children: [
         {
           text: "生产站点",
+          icon: "fa-brands fa-sourcetree",
           children: [
             'agent-pre-settings',
             'vmware-pre-settings',
@@ -51,6 +52,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "HyperBDR容灾平台",
+          icon: "shield",
           children: [
             'hyperbdr-vmware-pre-settings',
             'hyperbdr-proxy-pre-settings',
@@ -90,7 +92,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "HyperBDR容灾平台",
-          icon: "layer-group",
+          icon: "shield",
           children: [
             'failback-hyperbdr-pre-settings',
           ],
@@ -103,7 +105,7 @@ export const zhSidebar = sidebar({
   "/zh/product-overview/": [
     {
       text: "产品概览",
-      icon: "book",
+      icon: "circle-info",
       prefix: "",
       children: [
         'product-training/product-overview.md',
@@ -118,7 +120,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: "兼容性与限制条件",
-      icon: "book",
+      icon: "triangle-exclamation",
       prefix: "",
       children: [
         'limitations/product-support-overview',
@@ -132,7 +134,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: "项目概述",
-      icon: "book",
+      icon: "project-diagram",
       prefix: "",
       children: [
         'product-training/project-delivery.md',
@@ -142,7 +144,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: "主机调研",
-      icon: "book",
+      icon: "magnifying-glass",
       prefix: "",
       children: [
         'presales/hyperbdr-agent-investigation',
@@ -154,11 +156,12 @@ export const zhSidebar = sidebar({
   '/zh/userguide/dr-usage-guide/': [
     {
       text: "用户手册",
-      icon: "book",
+      icon: "circle-info",
       prefix: "",
       children: [
         {
           text: "Huawei Cloud",
+          icon: "cloud",
           children: [
             'dr-operations-manual-huaweicloud-object',
             'dr-operations-manual-huaweicloud-block',
@@ -166,12 +169,14 @@ export const zhSidebar = sidebar({
         },
         {
           text: "Huawei Cloud Stack 8.2.x/8.3.x",
+          icon: "cloud",
           children: [
             'dr-operations-manual-hcs8-block',
           ],
         },
         {
           text: "TM CAE",
+          icon: "cloud",
           children: [
             'dr-operations-manual-tmcae-object',
           ],
@@ -182,7 +187,7 @@ export const zhSidebar = sidebar({
   '/zh/userguide/installation/': [
     {
       text: "安装指南",
-      icon: "book",
+      icon: "download",
       prefix: "",
       children: [
         'quick-installation.md',
@@ -198,27 +203,7 @@ export const zhSidebar = sidebar({
       children: [
         {
           text: "登录",
-          icon: "",
-          children: [
-            {
-              text: "Login",
-              icon: "",
-              link: "login.md"
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  '/zh/userguide/dr/': [
-    {
-      text: "用户平台",
-      icon: "book",
-      prefix: "",
-      children: [
-        {
-          text: "登录",
-          icon: "",
+          icon: "user",
           prefix: "login/",
           children: [
             "login.md",
@@ -226,7 +211,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "概览",
-          icon: "",
+          icon: "dashboard",
           prefix: "dashboard/",
           children: [
             "profile.md",
@@ -235,37 +220,28 @@ export const zhSidebar = sidebar({
           ],
         },
         {
-          text: "资源容灾",
-          icon: "",
-          prefix: "dr/",
+          text: "资源迁移",
+          icon: "shuffle",
+          prefix: "migration/",
           children: [
-            "host-dr.md",
-            "host-failback.md",
-          ]
-        },
-        {
-          text: "资源编排",
-          icon: "",
-          prefix: "orchestration/",
-          children: [
-            "dr-group.md"
+            "host-migration.md",
           ]
         },
         {
           text: "配置管理",
-          icon: "",
+          icon: "gear",
           prefix: "configuration/",
           children: [
-            "production-site.md",
-            "dr-site.md",
+            "source-site.md",
+            "target-site.md",
             "storage-configuration.md",
-            "dr-site-configuration.md",
+            "target-site-configuration.md",
             "policy-settings.md",
           ]
         },
         {
           text: "运维管理",
-          icon: "",
+          icon: "gears",
           prefix: "operations/",
           children: [
             "audit-logs.md",
@@ -278,7 +254,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "监控与报警管理",
-          icon: "",
+          icon: "chart-line",
           prefix: "monitor-alerts/",
           children: [
             "system-monitor.md",
@@ -289,7 +265,97 @@ export const zhSidebar = sidebar({
         },
         {
           text: "设置",
-          icon: "",
+          icon: "wrench",
+          prefix: "settings/",
+          children: [
+            "global-settings.md",
+            "license-management.md",
+            "versions.md",
+          ]
+        },
+      ],
+    },
+  ],
+  '/zh/userguide/dr/': [
+    {
+      text: "用户平台",
+      icon: "book",
+      prefix: "",
+      children: [
+        {
+          text: "登录",
+          icon: "user",
+          prefix: "login/",
+          children: [
+            "login.md",
+          ],
+        },
+        {
+          text: "概览",
+          icon: "dashboard",
+          prefix: "dashboard/",
+          children: [
+            "profile.md",
+            "logout.md",
+            "language-switch.md",
+          ],
+        },
+        {
+          text: "资源容灾",
+          icon: "shield",
+          prefix: "dr/",
+          children: [
+            "host-dr.md",
+            "host-failback.md",
+          ]
+        },
+        {
+          text: "资源编排",
+          icon: "paper-plane",
+          prefix: "orchestration/",
+          children: [
+            "dr-group.md"
+          ]
+        },
+        {
+          text: "配置管理",
+          icon: "gear",
+          prefix: "configuration/",
+          children: [
+            "production-site.md",
+            "dr-site.md",
+            "storage-configuration.md",
+            "dr-site-configuration.md",
+            "policy-settings.md",
+          ]
+        },
+        {
+          text: "运维管理",
+          icon: "gears",
+          prefix: "operations/",
+          children: [
+            "audit-logs.md",
+            "task-management.md",
+            "download-logs.md",
+            "upgrade.md",
+            "reports.md",
+            "tag-management.md",
+          ]
+        },
+        {
+          text: "监控与报警管理",
+          icon: "chart-line",
+          prefix: "monitor-alerts/",
+          children: [
+            "system-monitor.md",
+            "alarm.md",
+            "notification.md",
+            "alerts.md",
+          ]
+        },
+        {
+          text: "设置",
+          icon: "wrench",
           prefix: "settings/",
           children: [
             "global-settings.md",
@@ -303,7 +369,7 @@ export const zhSidebar = sidebar({
   '/zh/userguide/faq/': [
     {
       text: "FAQ常见问题解答",
-      icon: "book",
+      icon: "question",
       prefix: "",
       children: [
         'faq',
@@ -315,7 +381,7 @@ export const zhSidebar = sidebar({
   '/zh/userguide/operations/': [
     {
       text: "管理指南",
-      icon: "book",
+      icon: "user-gear",
       prefix: "",
       children: [
         "upgrade-manual.md",
@@ -326,12 +392,12 @@ export const zhSidebar = sidebar({
   '/zh/userguide/om-guide/': [
     {
       text: "运维指南",
-      icon: "book",
+      icon: "tools",
       prefix: "",
       children: [
         {
           text: "概览",
-          icon: "book",
+          icon: "circle-info",
           prefix: "overview/",
           children: [
             "overview.md"
@@ -341,7 +407,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "系统架构",
-          icon: "book",
+          icon: "window-restore",
           prefix: "system-architecture/",
           children: [
             "system-architecture.md"
@@ -351,18 +417,23 @@ export const zhSidebar = sidebar({
         },
         {
           text: "运维管理",
-          icon: "book",
+          icon: "bars-progress",
           prefix: "om-management/",
           children: [
             "daliy-om.md",
-            "services-component-om.md",
+            "console.md",
+            "sync-proxy.md",
+            "linux-agent.md",
+            "windows-agent.md",
+            "cloud-sync-gateway.md",
+            "transition-host-image.md",
           ],
           collapsible: true,
           expanded: true,
         },
         {
-          text: "升级维护",
-          icon: "book",
+          text: "升级管理",
+          icon: "cloud-arrow-up",
           prefix: "upgrade-maintenance/",
           children: [
             "console.md",
@@ -377,7 +448,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "报告管理",
-          icon: "book",
+          icon: "file-export",
           prefix: "report-export/",
           children: [
             "report-type.md",
@@ -387,8 +458,8 @@ export const zhSidebar = sidebar({
           expanded: true,
         },
         {
-          text: "监控告警",
-          icon: "book",
+          text: "监控告警管理",
+          icon: "chart-line",
           prefix: "monitor-alerts/",
           children: [
             "overview-display.md",
@@ -402,7 +473,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "容灾演练",
-          icon: "book",
+          icon: "shield-halved",
           prefix: "dr-drill/",
           children: [
             "drill-preparation.md",
@@ -414,7 +485,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "容灾接管",
-          icon: "book",
+          icon: "shield-halved",
           prefix: "dr-takeover/",
           children: [
             "takeover-prerequisites.md",
@@ -425,7 +496,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "附录",
-          icon: "book",
+          icon: "list-ul",
           prefix: "appendix/",
           children: [
             "commands-tools.md",
@@ -437,7 +508,7 @@ export const zhSidebar = sidebar({
         },
         {
           text: "结语",
-          icon: "book",
+          icon: "mug-hot",
           prefix: "end-summary/",
           children: [
             "summary.md",
@@ -453,25 +524,27 @@ export const zhSidebar = sidebar({
   '/zh/userguide/admin-portal/': [
     {
       text: "管理门户",
-      icon: "book",
+      icon: "window-maximize",
       prefix: "",
       children: [
       ]
     },
   ],
-  '/zh/userguide/tools/': [
+  '/zh/userguide/calculator/': [
     {
       text: "容灾计算器",
-      icon: "",
-      prefix: "calculator/",
+      icon: "calculator",
+      prefix: "",
       children: [
         "calculator.md"
       ]
     },
+  ],
+  '/zh/userguide/license-management/': [
     {
-      text: "License授权管理平台",
-      icon: "",
-      prefix: "license-management/",
+      text: "授权管理平台",
+      icon: "key",
+      prefix: "",
       children: [
         "license-management.md"
       ]
