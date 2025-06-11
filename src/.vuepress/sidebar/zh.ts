@@ -295,6 +295,7 @@ export const zhSidebar = sidebar({
           icon: "dashboard",
           prefix: "dashboard/",
           children: [
+            "dashboard.md",
             "profile.md",
             "logout.md",
             "language-switch.md",
@@ -364,6 +365,49 @@ export const zhSidebar = sidebar({
           ]
         },
       ],
+            collapsible: true,
+      expanded: true, 
+    },
+    {
+      text: "恢复平台及存储配置指南",
+      icon: "book",
+      prefix: "",
+      children: [
+        {
+          text: "对象存储",
+          icon: "gear",
+          prefix: "obs-configuration/",
+          children: [
+            "others",
+            "alibaba",
+            "huaweicloud"
+          ],
+        },
+        {
+          text: "容灾恢复平台(块存储)",
+          icon: "gear",
+          prefix: "dr-site-configuration-block/",
+          children: [
+            "aws",
+            "huawei",
+            "tengxun",
+            "alibaba",
+          ],
+        },
+        {
+          text: "容灾恢复平台(对象存储)",
+          icon: "gear",
+          prefix: "dr-site-configuration-obs/",
+          children: [
+            "aws",
+            "huawei",
+            "tengxun",
+            "alibaba",
+          ],
+        },
+      ],
+      collapsible: true,
+      expanded: true,
     },
   ],
   '/zh/userguide/faq/': [
