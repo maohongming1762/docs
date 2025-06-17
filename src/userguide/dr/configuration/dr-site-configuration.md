@@ -15,19 +15,19 @@ You can configure DR or failback strategies as needed to achieve end-to-end busi
 
 | Cloud Vendor                                 | Notes   |
 |----------------------------------------------|---------|
-| Alibaba Cloud                               |         |
+| Alibaba Cloud                               |[Click to View](../dr-site-configuration-obs/alibaba.md)         |
 | Alibaba Cloud Apsara Stack(v3.16.x)         |         |
 | Alibaba Cloud Apsara Stack(v3.18.x)         |         |
-| AWS China(SDK v1.34.93)                     |         |
+| AWS China(SDK v1.34.93)                     |[Click to View](../dr-site-configuration-obs/aws.md)         |
 | AWS(SDK v1.34.93)                           |         |
 | ctyun JC                                    |         |
 | ecloud                                      |         |
 | GDS                                         |         |
 | Huawei Cloud Stack Online(v23.3)            |         |
-| Huawei Cloud (Recommended, SDK v3.1.86)     |         |
+| Huawei Cloud (Recommended, SDK v3.1.86)     |[Click to View](../dr-site-configuration-obs/huawei.md)         |
 | Open Telekom Cloud(SDK v3.1.86)             |         |
 | OpenStack Community (Juno+)                 |         |
-| Tencent Cloud                               |         |
+| Tencent Cloud                               |[Click to View](../dr-site-configuration-obs/tengxun.md)         |
 | TM CAE                                      |         |
 | UCloud                                      |         |
 | VMware                                      |         |
@@ -37,6 +37,7 @@ You can configure DR or failback strategies as needed to achieve end-to-end busi
 ## **Block Storage Mode**
 
 > Note: For all operations in [Block Storage Mode], go to [Storage Configuration] -> [Block Storage] -> [DR].
+> [👉Click to View](../configuration/storage-configuration.md#block-storage)
 
 ## **Generic Mode**
 

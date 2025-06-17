@@ -33,7 +33,7 @@ After the DR product is installed, you need to add a DR product license. You can
 
 TODO:
 
-(License application guidance steps)
+[License application guidance steps](../../poc/failback-hyperbdr-pre-settings.md#apply-for-hyperbdr-failback-license)
 
 If you have already added a license, please skip this step.
 
@@ -41,11 +41,11 @@ If you have already added a license, please skip this step.
 
 This step is for agentless mode on the source production platform, including five types: VMware, OpenStack, AWS, FusionCompute, and Oracle.
 
-* Add VMware production site
-* Add OpenStack production site
-* Add AWS production site
-* Add FusionCompute production site
-* Add Oracle production site
+* [Add VMware production site](../configuration/production-site.md#add-vmware-platform)
+* [Add OpenStack production site](../configuration/production-site.md#add-openstack-platform)
+* [Add AWS production site](../configuration/production-site.md#add-aws-platform)
+* [Add FusionCompute production site](../configuration/production-site.md#add-fusioncompute-platform)
+* [Add Oracle production site](../configuration/production-site.md#add-oracle-platform)   
 
 If your source is in **Agent** or you have already completed the **production site configuration**, please skip this step.
 
@@ -111,18 +111,18 @@ QCOW image download link: [Download Here](https://downloads.oneprocloud.com/docs
 
 | Production Platform | Prerequisites                                             | Documentation                                                                                                               |
 | :-----------------: | :-------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| VMware              | Complete the deployment and installation of the Sync Proxy agent, then add the source VMware production platform.         | [Add VMware Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#vmware)         |
-| OpenStack           | Complete the deployment and installation of the Sync Proxy agent, then add the source OpenStack Ceph production platform.  | [Add OpenStack Production Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#openstack) |
-| AWS                 | Complete the deployment and installation of the Sync Proxy agent, then add the source AWS production platform.             | [Add AWS Production Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#aws)   |
-| FusionCompute       | Complete the deployment and installation of the Sync Proxy agent, then add the source FusionCompute production platform.   | Create FusionCompute Production Platform                                                                                     |
-| Oracle              | Complete the deployment and installation of the Sync Proxy agent, then add the source Oracle production platform.          | Create Oracle Production Platform                                                                                            |
+| VMware              | Complete the deployment and installation of the Sync Proxy agent, then add the source VMware production platform.         | [Add VMware Production Platform](../configuration/production-site.md#add-vmware-platform)         |
+| OpenStack           | Complete the deployment and installation of the Sync Proxy agent, then add the source OpenStack Ceph production platform.  | [Add OpenStack Production Platform](../configuration/production-site.md#add-openstack-platform) |
+| AWS                 | Complete the deployment and installation of the Sync Proxy agent, then add the source AWS production platform.             | [Add AWS Production Platform](../configuration/production-site.md#add-aws-platform)   |
+| FusionCompute       | Complete the deployment and installation of the Sync Proxy agent, then add the source FusionCompute production platform.   | [Add FusionCompute Production Platform](../configuration/production-site.md#add-fusioncompute-platform)                                                                                   |
+| Oracle              | Complete the deployment and installation of the Sync Proxy agent, then add the source Oracle production platform.          | [Add Oracle Production Platform](../configuration/production-site.md#add-oracle-platform)                                                                                             |
 
 
 #### **VMware**
 
 Click the **"Select Host"** menu, then click the **"Add Host"** button to add a host. Choose the production platform type, select **"Agentless"**, and select **"VMware"** platform. In the production platform, choose the already added VMware platform link, then click **"Next"** to proceed to select the VMware hosts for disaster recovery.
 
-If you have not added a production platform yet, you can click the **"Add New"** button to add a new VMware production platform. Refer to the steps here: [Add VMware Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#vmware)
+If you have not added a production platform yet, you can click the **"Add New"** button to add a new VMware production platform. Refer to the steps here: [Add VMware Platform](../configuration/production-site.md#add-vmware-platform)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-2.png)
 
@@ -144,7 +144,7 @@ Once added, you can check the virtual machines to be backed up, then click the *
 
 Click the **"Select Host"** menu, then click the **"Add Host"** button to add a host. Choose the production platform type, select **"Agentless"**, and select the **"OpenStack"** platform. In the production platform section, choose the already added OpenStack platform link, then click **"Next"** to proceed to select the OpenStack hosts for disaster recovery.
 
-If you have not added a production platform yet, you can click the **"Add New"** button to add a new OpenStack production platform. Refer to the steps here: [Add OpenStack Production Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#openstack)
+If you have not added a production platform yet, you can click the **"Add New"** button to add a new OpenStack production platform. Refer to the steps here: [Add OpenStack Production Platform](../configuration/production-site.md#add-openstack-platform)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-4.png)
 
@@ -168,7 +168,7 @@ Once added, you can check the virtual machines to be backed up, then click the *
 
 Click the **"Select Host"** menu, then click the **"+ Add Host"** button to add a host. Choose the production platform type, select **"Agentless"**, and select the **"AWS"** platform. In the production platform section, choose the already added AWS platform link, then click **"Next"** to proceed to select the AWS hosts for disaster recovery.
 
-If you have not added a production platform yet, you can click the **"Add New"** button to add a new AWS production platform. Refer to the steps here: [Add AWS Production Platform](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#aws)
+If you have not added a production platform yet, you can click the **"Add New"** button to add a new AWS production platform. Refer to the steps here: [Add AWS Production Platform](../configuration/production-site.md#add-aws-platform)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-7.png)
 
@@ -194,13 +194,13 @@ Click the **"Select Host"** menu, then click the **"+ Add Host"** button to add 
 Select the production platform type, choose **"Agentless"**, and select the **"FusionCompute"** platform.  
 In the production platform list, select the already added FusionCompute platform link, then click **"Next"** to proceed to the list of FusionCompute disaster recovery hosts.
 
-If you have not added a production platform, click the **"Add New"** button to add a new FusionCompute production platform. Refer to the guide: Add FusionCompute Production Platform
+If you have not added a production platform, click the **"Add New"** button to add a new FusionCompute production platform. Refer to the guide: [Add FusionCompute Production Platform](../configuration/production-site.md#add-fusioncompute-platform)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-10.png)
 
 Select the virtual machines to be backed up from the current FusionCompute platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
 
-When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of [source sync agents](https://hypermotion.yuque.com/fe338c/qzb4z6/hbgii4h7vi73hh3k#k0D0X) anytime to support large-scale backups.
+When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
 
 The list shows all virtual machines including operating system, disk count, total disk capacity, and support for sync and incremental backup.
 
@@ -212,13 +212,13 @@ Click the **"Select Host"** menu, then click the **"Add Host"** button to add a 
 Select the production platform type, choose **"Agentless"**, and select the **"Oracle"** platform.  
 In the production platform list, select the already added Oracle platform link, then click **"Next"** to proceed to the Oracle disaster recovery host list.
 
-If you have not added a production platform, click the **"Add New"** button to add a new Oracle production platform. Refer to the guide: Add Oracle Production Platform
+If you have not added a production platform, click the **"Add New"** button to add a new Oracle production platform. Refer to the guide: [Add Oracle Production Platform](../configuration/production-site.md#add-oracle-platform)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-11.png)
 
 Select the virtual machines to be backed up from the current Oracle platform. You can select them manually page by page or use the search function to find hosts by name or operating system.
 
-When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of [source sync agents](https://hypermotion.yuque.com/fe338c/qzb4z6/hbgii4h7vi73hh3k#k0D0X) anytime to support large-scale backups.
+When selecting backup hosts, refer to the host disk count and source sync agent information. The current number of sync agents, maximum mountable disks, mounted disks, and remaining mountable disks are displayed. You can scale the specifications and quantity of source sync agents anytime to support large-scale backups.
 
 The list shows all virtual machines including operating system, disk count, total disk capacity, and support for sync and incremental backup.
 
@@ -352,40 +352,13 @@ Specify the backup host to use the "Block Storage" type for backup, and select t
 | VMware Quiesce Snapshot | Yes/No        | Quiesce snapshot currently only effective for VMware hosts with VMware-tools installed. |
 
 
-##### **支持的存储类型**
+##### **Supported Storage Types**
 
-| Cloud Vendor Name                            | Configuration Description |
-|---------------------------------------------|----------------------------|
-| OpenStack Community (Juno+)                 |                            |
-| General Platform                            |                            |
-| Alibaba Cloud                               |                            |
-| Alibaba Cloud Apsara Stack (v3.16.x)        |                            |
-| Alibaba Cloud Apsara Stack (v3.18.x)        |                            |
-| AWS China (SDK v1.34.93)                    |                            |
-| AWS (SDK v1.34.93)                          |                            |
-| ecloud                                      |                            |
-| ecloud JC                                   |                            |
-| eSurfingCloud 4.0                           |                            |
-| FiXo Cloud BS                               |                            |
-| Google Cloud (SDK v1.19.0)                  |                            |
-| GridCloud                                   |                            |
-| Huawei Cloud Stack Online (v23.3)           |                            |
-| Huawei Cloud (Recommended, SDK v3.1.86)     |                            |
-| Microsoft Azure (SDK v30.3)                 |                            |
-| Jinshan Cloud                               |                            |
-| Open Telekom Cloud (SDK v3.1.86)            |                            |
-| Oracle Cloud (SDK v2.126.3)                 |                            |
-| QingCloud                                   |                            |
-| SMTX OS (v6.x.x)                            |                            |
-| Tencent Cloud                               |                            |
-| Tencent Cloud TStack Enterprise             |                            |
-| Tencent Cloud TStack Ultimate               |                            |
-| TM CAE                                      |                            |
-| UCloudStack                                 |                            |
-| XHERE (NeutonOS_3.x)                        |                            |
-| ZStack (v4.x.x)                             |                            |
+Before proceeding with the configuration, please complete the block storage setup. If you haven't added it yet, click the button below to go to the block storage configuration page.
 
-After completing **Specify DR Platform**, click **"Next"** to start **Specify Cloud Sync Gateway**.
+[👉Click to View Block Storage Configuration](../configuration/storage-configuration.md#block-storage)
+
+After completing the block storage setup, you can select the corresponding block storage platform from the dropdown list,After completing **Specify DR Platform**, click **"Next"** to start **Specify Cloud Sync Gateway**.
 
 #### **Specify Cloud Sync Gateway**
 
@@ -602,6 +575,10 @@ Select "Object Storage" as the storage type, then configure the block storage st
 Assign the backup host to use the "Object Storage" type for backup and select the configuration parameters.
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-44.png)
+
+##### **Supported Storage Types**
+
+[Click to View Object Storage Configuration](../configuration/storage-configuration.md#object-storage)
 
 ##### **Storage Configuration**
 
@@ -880,9 +857,9 @@ Click **"Actions"** to modify a host that has already been configured.
 
 Click **"Specify DR Platform"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#specify-dr-platform)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#specify-dr-platform-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-68.png)
 
@@ -892,9 +869,7 @@ Object Storage: (Link)
 
 Click **"Specify Cloud Sync Gateway"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
-
-Object Storage: (Link)
+Block Storage: [Click to View](#specify-cloud-sync-gateway)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-69.png)
 
@@ -904,9 +879,9 @@ Object Storage: (Link)
 
 Click **"Specify Volume Type"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#specify-volume-type)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#specify-volume-type-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-70.png)
 
@@ -916,9 +891,9 @@ Object Storage: (Link)
 
 Click **"Computing Resource Configuration"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#computing-resource-configuration)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#computing-resource-configuration-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-71.png)
 
@@ -928,9 +903,9 @@ Object Storage: (Link)
 
 Click **"Network Configuration"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#network-configuration)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#network-configuration-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-72.png)
 
@@ -938,9 +913,9 @@ Object Storage: (Link)
 
 Click **"Advanced Configuration"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#advanced-configuration)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#advanced-configuration-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-73.png)
 
@@ -948,9 +923,9 @@ Object Storage: (Link)
 
 Click **"Associate Policy"** to modify the DR platform. For details, refer to:
 
-Block Storage: (Link)
+Block Storage: [Click to View](#associate-policy)
 
-Object Storage: (Link)
+Object Storage: [Click to View](#associate-policy-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-74.png)
 

@@ -33,7 +33,7 @@ TODO：
 
 TODO：
 
-(授权License申请指导步骤)
+[点击查看授权License申请指导步骤](../../poc/failback-hyperbdr-pre-settings.md#申请hyperbdr容灾回切授权)
 
 如果您已经添加过授权，请忽略此步骤。&#x20;
 
@@ -41,15 +41,15 @@ TODO：
 
 此步骤为源端生产平台无代理模式，包含源端为VMware、OpenStack、AWS 、FusionCompute、Oracle五种类型
 
-* 添加VMware生产站点
+* [添加VMware生产站点](../configuration/production-site.md#添加vmware平台)
 
-* 添加OpenStack生产站点
+* [添加OpenStack生产站点](../configuration/production-site.md#添加openstack平台)
 
-* 添加AWS生产站点
+* [添加AWS生产站点](../configuration/production-site.md#添加aws平台)
 
-* 添加FusionCompute生产站点
+* [添加FusionCompute生产站点](../configuration/production-site.md#添加fusioncompute平台)
 
-* 添加Oracle生产站点
+* [添加Oracle生产站点](../configuration/production-site.md#添加oracle平台)
 
 如果您的源端为**代理模式**或者您已经完成了**生产站点配置**请忽略此步骤。
 
@@ -115,17 +115,17 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 | 生产平台      | 基础条件                                              | 指导文档                                                                                                                   |
 | :----------: | :--------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| VMware       | 完成Sync Proxy同步代理的部署安装，完成源端VMware生产平台的添加        | [添加VMware平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#vmware)           |
-| OpenStack    | 完成Sync Proxy同步代理的部署安装，完成源端OpenStack Ceph生产平台的添加 | [添加OpenStack生产平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#openstack) |
-| AWS          | 完成Sync Proxy同步代理的部署安装，完成源端AWS生产平台的添加           | [添加AWS生产平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#aws)             |
-| FusionCompute| 完成Sync Proxy同步代理的部署安装，完成源端FusionCompute生产平台的添加 | 创建FusionCompute生产平台                                                                                                  |
-| Oracle       | 完成Sync Proxy同步代理的部署安装，完成源端Oracle生产平台的添加        | 创建Oracle生产平台                                                                                                         |
+| VMware       | 完成Sync Proxy同步代理的部署安装，完成源端VMware生产平台的添加        | [添加VMware生产平台](../configuration/production-site.md#添加vmware平台)           |
+| OpenStack    | 完成Sync Proxy同步代理的部署安装，完成源端OpenStack Ceph生产平台的添加 | [添加OpenStack生产平台](../configuration/production-site.md#添加openstack平台) |
+| AWS          | 完成Sync Proxy同步代理的部署安装，完成源端AWS生产平台的添加           | [添加AWS生产平台](../configuration/production-site.md#添加aws平台)             |
+| FusionCompute| 完成Sync Proxy同步代理的部署安装，完成源端FusionCompute生产平台的添加 | [添加FusionCompute生产平台](../configuration/production-site.md#添加fusioncompute平台)                                                                                                  |
+| Oracle       | 完成Sync Proxy同步代理的部署安装，完成源端Oracle生产平台的添加        | [添加Oracle生产平台](../configuration/production-site.md#添加oracle平台)                                                                                                         |
 
 #### **VMware**
 
 点击 **"选择主机"** 菜单， 点击 **"添加主机"** 按钮来添加主机，选择生产平台类型，选&#x62E9;**"源端无代理模式"**，并选&#x62E9;**"VMware"**&#x5E73;台，选择生产平台中，选择已经添加完成的VMware平台链接，并点&#x51FB;**"下一步"**&#x8FDB;行选择VMware待容灾主机列表。
 
-如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的VMware生产平台，参考步骤：[添加VMware平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#vmware)
+如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的VMware生产平台，参考步骤：[添加VMware平台](../configuration/production-site.md#添加vmware平台)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-2.png)
 
@@ -147,7 +147,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点击 **"选择主机"** 菜单， 点击 **"添加主机"** 按钮来添加主机，选择生产平台类型，选&#x62E9;**"源端无代理模式"**，并选&#x62E9;**"OpenStack"**&#x5E73;台，选择生产平台中，选择已经添加完成的OpenStack平台链接，并点&#x51FB;**"下一步"**&#x8FDB;行选择OpenStack待容灾主机列表。
 
-如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的OpenStack生产平台，参考步骤：[添加OpenStack生产平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#openstack)
+如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的OpenStack生产平台，参考步骤：[添加OpenStack生产平台](../configuration/production-site.md#添加openstack平台)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-4.png)
 
@@ -171,7 +171,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点击 **"选择主机"** 菜单， 点击 **"+ 添加主机"** 按钮来添加主机，选择生产平台类型，选&#x62E9;**"源端无代理模式"**，并选&#x62E9;**"AWS"**&#x5E73;台，选择生产平台中，选择已经添加完成的AWS平台链接，并点&#x51FB;**"下一步"**&#x8FDB;行选择AWS待容灾主机列表。
 
-如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：[添加AWS生产平台](https://docs-preview.oneprocloud.com/zh/userguide/dr/configuration/production-site.html#aws)
+如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：[添加AWS生产平台](../configuration/production-site.md#添加aws平台)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-7.png)
 
@@ -193,13 +193,13 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点击 **"选择主机"** 菜单， 点击 **"+ 添加主机"** 按钮来添加主机，选择生产平台类型，选&#x62E9;**"源端无代理模式"**，并选&#x62E9;**"FusionCompute"**&#x5E73;台，选择生产平台中，选择已经添加完成的AWS平台链接，并点&#x51FB;**"下一步"**&#x8FDB;行选择FusionCompute待容灾主机列表。
 
-如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：添加FusionCompute生产平台
+如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：[添加FusionCompute生产平台](../configuration/production-site.md#添加fusioncompute平台)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-10.png)
 
 从当前FusionCompute平台中勾选需要容灾备份的虚拟机，可以翻页进行手动进行批量勾选，也可以使用搜索功能根据名称和系统类型进行搜索需要备份的主机。
 
-在选择备份主机时，可以参考选择主机磁盘数量变化及源端同步代理信息，目前源端同步代理数量、最大挂载磁盘数量、已挂载磁盘数量及剩余可挂载磁盘数量，可以根据信息来随时扩展[源端同步代理](https://hypermotion.yuque.com/fe338c/qzb4z6/hbgii4h7vi73hh3k#k0D0X)的规格及数量来支持大批量的备份。
+在选择备份主机时，可以参考选择主机磁盘数量变化及源端同步代理信息，目前源端同步代理数量、最大挂载磁盘数量、已挂载磁盘数量及剩余可挂载磁盘数量，可以根据信息来随时扩展源端同步代理的规格及数量来支持大批量的备份。
 
 可以从列表中看到所有虚拟机的清单、包含操作系统、磁盘数量、磁盘总容量、支持同步及支持增量等内容。
 
@@ -211,13 +211,13 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点击 **"选择主机"** 菜单， 点击 **"添加主机"** 按钮来添加主机，选择生产平台类型，选&#x62E9;**"源端无代理模式"**，并选&#x62E9;**"Oracle"**&#x5E73;台，选择生产平台中，选择已经添加完成的AWS平台链接，并点&#x51FB;**"下一步"**&#x8FDB;行选择Oracle待容灾主机列表。
 
-如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：添加Oracle生产平台
+如果你还没有添加生产平台，可以点击 "添加生产平台" 按钮来添加一个新的AWS生产平台，参考步骤：[添加Oracle生产平台](../configuration/production-site.md#添加oracle平台)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-11.png)
 
 从当前FusionCompute平台中勾选需要容灾备份的虚拟机，可以翻页进行手动进行批量勾选，也可以使用搜索功能根据名称和系统类型进行搜索需要备份的主机。
 
-在选择备份主机时，可以参考选择主机磁盘数量变化及源端同步代理信息，目前源端同步代理数量、最大挂载磁盘数量、已挂载磁盘数量及剩余可挂载磁盘数量，可以根据信息来随时扩展[源端同步代理](https://hypermotion.yuque.com/fe338c/qzb4z6/hbgii4h7vi73hh3k#k0D0X)的规格及数量来支持大批量的备份。
+在选择备份主机时，可以参考选择主机磁盘数量变化及源端同步代理信息，目前源端同步代理数量、最大挂载磁盘数量、已挂载磁盘数量及剩余可挂载磁盘数量，可以根据信息来随时扩展源端同步代理的规格及数量来支持大批量的备份。
 
 可以从列表中看到所有虚拟机的清单、包含操作系统、磁盘数量、磁盘总容量、支持同步及支持增量等内容。
 
@@ -231,7 +231,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点击下方的安装命令，在源端Linux主机终端中执行即可完成Linux备份主机的添加。
 
-详细安装步骤操作参考：(安装Linux Agent)
+详细安装步骤操作参考：[点击查看](../configuration/production-site.md#linux-agent)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-12.png)
 
@@ -247,7 +247,7 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 根据操作系统版本点&#x51FB;**"立即下载"**&#x6765;下载Windows Agent安装包，并将安装包上传至Windows主机进行安装
 
-详细安装步骤操作参考：(安装Windows Agent)
+详细安装步骤操作参考：[点击查看](../configuration/production-site.md#windows-agent)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-14.png)
 
@@ -350,39 +350,11 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 ##### **支持的存储类型**
 
-| 云厂商名称                            | 配置说明 |
-| -------------------------------- | ---- |
-| OpenStack社区版本 (Juno+)            |      |
-| 通用平台                             |      |
-| 阿里云                              |      |
-| 阿里云 专有云 (v3.16.x)                |      |
-| 阿里云 专有云 (wv3.18.x)               |      |
-| 华为云 HCS Online (v23.3)           |      |
-| 华为云（推荐使用，SDK v3.1.86）            |      |
-| 华为云 Stack(HCS) (v8.2.x / v8.3.x) |      |
-| 甲骨文云 (SDK v2.126.3)              |      |
-| 金山云                              |      |
-| 绿能云                              |      |
-| 青云                               |      |
-| 腾讯云                              |      |
-| 腾讯云 TStack 旗舰版                   |      |
-| 腾讯云 TStack 企业版                   |      |
-| 天翼云 4.0                          |      |
-| 移动和云                             |      |
-| 移动云                              |      |
-| AWS (SDK v1.34.93)               |      |
-| AWS 中国 (SDK v1.34.93)            |      |
-| FiXo Cloud BS                    |      |
-| Google Cloud (SDK v1.19.0)       |      |
-| Microsoft Azure (SDK v30.3)      |      |
-| Open Telekom Cloud (SDK v3.1.86) |      |
-| SMTX OS (v6.x.x)                 |      |
-| TM CAE                           |      |
-| UCloudStack                      |      |
-| XHERE (NeutonOS \_3.x)           |      |
-| ZStack (v4.x.x)                  |      |
+在进行配置前，请先完成块存储配置。如尚未添加，请点击下方按钮进入块存储配置页面。
 
-存储平台选择配置完成后点&#x51FB;**“下一步”**，开始**指定云同步网关**。
+[👉点击查看块存储配置](../configuration/storage-configuration.md#块存储)
+
+完成块存储配置后可通过下拉列表选择对应块存储平台，存储平台选择配置完成后点&#x51FB;**“下一步”**，开始**指定云同步网关**。
 
 #### **指定云同步网关**
 
@@ -596,6 +568,10 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 存储类型选择"对象存储"，并按照所选信息进行块存储步骤配置，完成容灾配置操作。
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-43.png)
+
+##### **支持的存储类型**
+
+[点击查看对象存储配置](../configuration/storage-configuration.md#对象存储)
 
 #### **指定容灾平台**
 
@@ -881,21 +857,19 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“指定容灾平台”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#指定容灾平台)
 
-对象存储：(链接)
+对象存储：[点击查看](#指定容灾平台-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-68.png)
 
-#### **指定云同网关**
+#### **指定云同步网关**
 
 > 注意：已完成数据同步主机不支持更改
 
-点&#x51FB;**“指定云同网关”**，可完成容灾平台修改，具体可参考：
+点&#x51FB;**“指定云同步网关”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
-
-对象存储：(链接)
+块存储：[点击查看](#指定云同步网关)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-69.png)
 
@@ -905,9 +879,9 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“指定卷类型”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#指定卷类型)
 
-对象存储：(链接)
+对象存储：[点击查看](#指定卷类型-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-70.png)
 
@@ -917,9 +891,9 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“计算资源配置”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#计算资源配置)
 
-对象存储：(链接)
+对象存储：[点击查看](#计算资源配置-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-71.png)
 
@@ -929,9 +903,9 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“网络配置”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#网络配置)
 
-对象存储：(链接)
+对象存储：[点击查看](#网络配置-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-72.png)
 
@@ -939,9 +913,9 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“高级配置”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#高级配置)
 
-对象存储：(链接)
+对象存储：[点击查看](#高级配置-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-73.png)
 
@@ -949,9 +923,9 @@ QCOW镜像下载链接：[点击下载](https://downloads.oneprocloud.com/docs_i
 
 点&#x51FB;**“关联策略”**，可完成容灾平台修改，具体可参考：
 
-块存储：(链接)
+块存储：[点击查看](#关联策略)
 
-对象存储：(链接)
+对象存储：[点击查看](#关联策略-1)
 
 ![](./images/hostdisasterrecovery-hostdisasterrecovery-74.png)
 
